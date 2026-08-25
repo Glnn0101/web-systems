@@ -17,8 +17,40 @@
         </nav>
 
         <a href="login.html" style="text-decoration : none;color: white;border: 1px solid white;padding: 8px 16px;">Login</a>
-
     </header>
+
+    <main style="text-align: center;">
+
+        <div id="login-box" style="width: 350px;margin: 60px auto;padding: 30px;background-color: white;">
+            <h1>Login</h1>
+            <form style="display: flex;flex-direction: column;">
+                <div id="email-field" style="text-align: left;">
+                    <label>Email</label><br>
+                    <input type="text" name="email" style="width: 100%;">
+                </div>
+
+                <div id="password-field" style="text-align: left;margin-top: 15px">
+                    <label>Password</label><br>
+                    <input type="password" name="password" style="width: 100%;">
+                </div>
+
+                <div id="remember-row" style="display: flex;justify-content: space-between; margin-top: 15px;">
+                    <label><input type="checkbox" name="remember"> Remember Me</label>
+                    <a href="#" style="text-decoration: none;">Forget Password?</a>
+                </div>
+
+                <button type="submit" style="margin-top: 15px;padding: 10px;background-color: blue;color: white;border: none;">Login</button>
+
+            </form>
+
+            <p>Don't have an account? <a href="signup.html">Register</a></p>
+            <a href="#" style="text-decoration: none;">Log in with Facebook</a>
+
+        </div>
+
+
+
+    </main>
     
 </body>
 </html>
