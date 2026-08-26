@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Sign Up</title>
 </head>
 <body>
+    <header style="display: flex; justify-content: space-between; align-items: center; background-color: #17324d; color: white; padding: 20px;">
+        <div>Guppy Guide</div>
+ 
+        <nav style="display: flex;justify-content: center;">
+            <a href="landing.html" style="text-decoration: none;color: white;margin-right: 20px;">Home</a>
+            <a href="about.html" style="text-decoration: none;color: white;margin-right: 20px;">About</a>
+            <a href="profile.html" style="text-decoration: none;color: white;">Profile</a>
+        </nav>
+ 
+        <a href="login.html" style="text-decoration : none;color: white;border: 1px solid white;padding: 8px 16px;">Login</a>
+    </header>
+
+     <main style="text-align: center;">
+ 
+        <div id="signup-box" style="width: 350px;margin: 60px auto;padding: 30px;background-color: #e6eef2;">
+            <h1>Sign Up</h1>
+            <form style="display: flex;flex-direction: column;">
+                <div id="name-field" style="text-align: left;">
+                    <label>Full Name</label><br>
+                    <input type="text" name="fullname" style="width: 100%;">
+                </div>
+ 
+                <div id="email-field" style="text-align: left;margin-top: 15px">
+                    <label>Email</label><br>
+                    <input type="text" name="email" style="width: 100%;">
+                </div>
+ 
+                <div id="password-field" style="text-align: left;margin-top: 15px">
+                    <label>Password</label><br>
+                    <input type="password" name="password" style="width: 100%;">
+                </div>
+ 
+                <div id="confirm-password-field" style="text-align: left;margin-top: 15px">
+                    <label>Confirm Password</label><br>
+                    <input type="password" name="confirm_password" style="width: 100%;">
+                </div>
+ 
+                <div id="terms-row" style="text-align: left;margin-top: 15px;">
+                    <label><input type="checkbox" name="terms"> I agree to the Terms & Conditions</label>
+                </div>
+ 
+                <button type="submit" style="margin-top: 15px;padding: 10px;background-color: blue;color: white;border: none;">Sign Up</button>
+ 
+            </form>
+ 
+            <p>Already have an account? <a href="login.html">Login</a></p>
+            <a href="#" style="text-decoration: none;">Sign up with Facebook</a>
+ 
+        </div>
+ 
+    </main>
+    
+    <footer style="text-align: center;">
+        <p>Guppy Guide <Br>Learn. Care. Breed.</Br></p>
+    </footer>
+    
+</body>
+</html>
+ 
     
 </body>
 </html>
