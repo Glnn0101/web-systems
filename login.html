@@ -3,57 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Log in page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
-<body>
-    <header style="display: flex; justify-content: space-between; align-items: center; background-color: #17324d; color: white; padding: 20px;">
-        <div>Guppy Guide</div>
+<body class="login-page">
 
-        <nav style="display: flex;justify-content: center;">
-            <a href="landing.html" style="text-decoration: none;color: white;margin-right: 20px;">Home</a>
-            <a href="about.html" style="text-decoration: none;color: white;margin-right: 20px;">About</a>
-            <a href="profile.html" style="text-decoration: none;color: white;">Profile</a>
-        </nav>
+    <main class="login-main">
 
-        <!--background image-->
-        <a href="login.html" style="text-decoration : none;color: white;border: 1px solid white;padding: 8px 16px;">Login</a>
-    </header>
+        <div id="login-box">
 
-    <main style="text-align: center;">
+            <div class="login-image"></div>
 
-        <div id="login-box" style="width: 350px;margin: 60px auto;padding: 30px;background-color: #e6eef2;">
-            <h1>Login</h1>
-            <form style="display: flex;flex-direction: column;">
-                <div id="email-field" style="text-align: left;">
-                    <label>Email</label><br>
-                    <input type="text" name="email" style="width: 100%;">
-                </div>
+            <div class="login-content">
+                <h1>SIGN IN</h1>
+                <div class="line"></div>
+                <p class="instruction">Please enter your emil and passsword below to sign in.</p>
 
-                <div id="password-field" style="text-align: left;margin-top: 15px">
-                    <label>Password</label><br>
-                    <input type="password" name="password" style="width: 100%;">
-                </div>
+                <form class="login-form">
+                    <div id="email-field" class="form-field">
+                        <input type="text" name="email" placeholder="Email">
+                    </div>
 
-                <div id="remember-row" style="display: flex;justify-content: space-between; margin-top: 15px;">
-                    <label><input type="checkbox" name="remember"> Remember Me</label>
-                    <a href="#" style="text-decoration: none;">Forget Password?</a>
-                </div>
+                    <div id="password-field" class="form-field">
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
 
-                <button type="submit" style="margin-top: 15px;padding: 10px;background-color: blue;color: white;border: none;">Login</button>
+                    <div id="remember-row">
+                        <label><input type="checkbox" name="remember"> Remember Me</label>
+                        <a href="#" class="plain-link">Forgot Password?</a>
+                    </div>
 
-            </form>
+                    <button type="submit" class="submit-btn">SIGN IN</button>
+                </form>
 
-            <p>Don't have an account? <a href="signup.html">Register</a></p>
-            <a href="#" style="text-decoration: none;">Log in with Facebook</a>
+                <p class="register">Don't have an account? <a href="signup.html">Register</a></p>
+                <a href="#" class="plain-link">Log in with Facebook</a>
+            </div>
 
         </div>
 
     </main>
-    
-    <footer style="text-align: center;">
-        <p>Guppy Guide <Br>Learn. Care. Breed.</Br></p>
+
+    <footer class="login-footer">
+        <p>Finora <br>Learn. Care. Explore.</p>
     </footer>
-    
+
 </body>
 </html>
